@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "name": "Scientific Computing Library",
+    "language_info": {
+      "name": "JavaScipt",
+      "version": "8.0"
+    }
+  },
+  "jsnbversion": "v0.1",
+  "cells": [
+    {
+      "code": "# Scientific Computing Library\n\n### Contributors\n- Rudra Arya\n- Saksham Khandelwal\n- Prasoon Badjatya\n- Mansukh Singh Dhillon\n---\nGithub Repo Link: https://github.com/PsychoX21/SciCompute\n",
+      "status": "",
+      "output": "<h1>Scientific Computing Library</h1>\n<h3>Contributors</h3>\n<ul>\n<li>Rudra Arya</li>\n<li>Saksham Khandelwal</li>\n<li>Prasoon Badjatya</li>\n<li>Mansukh Singh Dhillon</li>\n</ul>\n<hr>\n<p>Github Repo Link: <a href=\"https://github.com/PsychoX21/SciCompute\">https://github.com/PsychoX21/SciCompute</a></p>\n",
+      "type": "html"
+    },
+    {
+      "code": "window.SciCompute = await import(\"https://cdn.jsdelivr.net/gh/PsychoX21/SciCompute@main/index.js\");\n\nconsole.log(SciCompute);",
+      "status": "[1]<br><span style=\"font-size:8px\">9ms<span></span></span>",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "(function() {\n    const originalLog = console.log;\n    console.log = function(...args) {\n        originalLog.apply(console, args);\n        scrib.show(...args); // Ensures output appears in the cell\n    };\n})();\n",
+      "status": "[2]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "## Scientific Computing Library\n\nThis library provides implementations of various numerical and scientific computing techniques, including linear algebra, differential equations, root finding, and real-world applications.\n\n### Function Overview\n\nThe functions are categorized into fundamental operations first, followed by more advanced applications.\n\n#### 1. Basic Numerical Methods\n- **Root Finding:** `newtonraphson`, `secant`\n- **Differentiation:** `differentiate`, `trapezoidal`\n\n#### 2. Linear Algebra Operations\n- **Matrix Operations:** `multiply`, `transpose`, `determinant`, `inverse`\n\n#### 3. Ordinary Differential Equations (ODE) Solvers\n- **First Order Methods:** `euler`, `rk4`\n- **Second Order Methods:** `euler2`, `rk4_2nd`\n\n#### 4. Advanced Applications\n- **Bioinformatics:** `needlemanWunsch`\n- **ODE Applications:** `lorenzAttractor`, `simplePendulum`, `projectileMotion`\n\n---\n  \nWorking on other functions too...\n\nRun out of time to write each syntax for ease of user",
+      "status": "",
+      "output": "<h2>Scientific Computing Library</h2>\n<p>This library provides implementations of various numerical and scientific computing techniques, including linear algebra, differential equations, root finding, and real-world applications.</p>\n<h3>Function Overview</h3>\n<p>The functions are categorized into fundamental operations first, followed by more advanced applications.</p>\n<h4>1. Basic Numerical Methods</h4>\n<ul>\n<li><strong>Root Finding:</strong> <code>newtonraphson</code>, <code>secant</code></li>\n<li><strong>Differentiation:</strong> <code>differentiate</code>, <code>trapezoidal</code></li>\n</ul>\n<h4>2. Linear Algebra Operations</h4>\n<ul>\n<li><strong>Matrix Operations:</strong> <code>multiply</code>, <code>transpose</code>, <code>determinant</code>, <code>inverse</code></li>\n</ul>\n<h4>3. Ordinary Differential Equations (ODE) Solvers</h4>\n<ul>\n<li><strong>First Order Methods:</strong> <code>euler</code>, <code>rk4</code></li>\n<li><strong>Second Order Methods:</strong> <code>euler2</code>, <code>rk4_2nd</code></li>\n</ul>\n<h4>4. Advanced Applications</h4>\n<ul>\n<li><strong>Bioinformatics:</strong> <code>needlemanWunsch</code></li>\n<li><strong>ODE Applications:</strong> <code>lorenzAttractor</code>, <code>simplePendulum</code>, <code>projectileMotion</code></li>\n</ul>\n<hr>\n<p>Working on other functions too...</p>\n<p>Run out of time to write each syntax for ease of user</p>\n",
+      "type": "html"
+    },
+    {
+      "code": "## Function Documentation & Examples",
+      "status": "",
+      "output": "<h2>Function Documentation &amp; Examples</h2>\n",
+      "type": "html"
+    },
+    {
+      "code": "### 1.1 Root Finding",
+      "status": "",
+      "output": "<h3>1.1 Root Finding</h3>\n",
+      "type": "html"
+    },
+    {
+      "code": "#### Newton-Raphson\n**Description:** Finds the root of a function using Newton-Raphson method.\n\n**Example Usage:**",
+      "status": "",
+      "output": "<h4>Newton-Raphson</h4>\n<p><strong>Description:</strong> Finds the root of a function using Newton-Raphson method.</p>\n<p><strong>Example Usage:</strong></p>\n",
+      "type": "html"
+    },
+    {
+      "code": "console.log(SciCompute.RootFinding.newtonRaphson(x => x*x - 2, x => 2*x, 1));",
+      "status": "[3]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "1.4142135623730951 <br>",
+      "type": "code"
+    },
+    {
+      "code": "#### Secant\n**Description:** Finds the root of a function using the Secant method.\n\n**Example Usage:**",
+      "status": "",
+      "output": "<h4>Secant</h4>\n<p><strong>Description:</strong> Finds the root of a function using the Secant method.</p>\n<p><strong>Example Usage:</strong></p>\n",
+      "type": "html"
+    },
+    {
+      "code": "console.log(SciCompute.RootFinding.secant(x => x*x - 2, 1, 2));",
+      "status": "[4]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "1.4142135623730954 <br>",
+      "type": "code"
+    },
+    {
+      "code": "### 1.2 Differential",
+      "status": "",
+      "output": "<h3>1.2 Differential</h3>\n",
+      "type": "html"
+    },
+    {
+      "code": "#### Differentiate\n**Description:** Computes the numerical derivative of a function.\n\n**Example Usage:**",
+      "status": "",
+      "output": "<h4>Differentiate</h4>\n<p><strong>Description:</strong> Computes the numerical derivative of a function.</p>\n<p><strong>Example Usage:</strong></p>\n",
+      "type": "html"
+    },
+    {
+      "code": "console.log(SciCompute.Differential.differentiate(Math.sin, Math.PI/4, 0.01));",
+      "status": "[5]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "0.7070949961324513 <br>",
+      "type": "code"
+    },
+    {
+      "code": "#### Trapezoidal Integration\n**Description:** Performs numerical integration using the trapezoidal rule.\n\n**Example Usage:**",
+      "status": "",
+      "output": "<h4>Trapezoidal Integration</h4>\n<p><strong>Description:</strong> Performs numerical integration using the trapezoidal rule.</p>\n<p><strong>Example Usage:</strong></p>\n",
+      "type": "html"
+    },
+    {
+      "code": "console.log(SciCompute.Differential.trapezoidal(Math.sin, 0, Math.PI, 100));",
+      "status": "[6]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "1.9998355038874436 <br>",
+      "type": "code"
+    },
+    {
+      "code": "### 2 Matrix Operations",
+      "status": "",
+      "output": "<h3>2 Matrix Operations</h3>\n",
+      "type": "html"
+    },
+    {
+      "code": "#### Multiply\n**Description:** Multiplies two matrices.\n\n**Example Usage:**",
+      "status": "",
+      "output": "<h4>Multiply</h4>\n<p><strong>Description:</strong> Multiplies two matrices.</p>\n<p><strong>Example Usage:</strong></p>\n",
+      "type": "html"
+    },
+    {
+      "code": "console.log(SciCompute.MatrixOps.multiply([[1, 2], [3, 4]], [[5, 6], [7, 8]]));",
+      "status": "[7]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "[\n  [\n    19,\n    22\n  ],\n  [\n    43,\n    50\n  ]\n] <br>",
+      "type": "code"
+    },
+    {
+      "code": "#### Transpose\n**Description:** Computes the transpose of a matrix.\n\n**Example Usage:**",
+      "status": "",
+      "output": "<h4>Transpose</h4>\n<p><strong>Description:</strong> Computes the transpose of a matrix.</p>\n<p><strong>Example Usage:</strong></p>\n",
+      "type": "html"
+    },
+    {
+      "code": "console.log(SciCompute.MatrixOps.transpose([[1, 2], [3, 4]]));",
+      "status": "[8]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "[\n  [\n    1,\n    3\n  ],\n  [\n    2,\n    4\n  ]\n] <br>",
+      "type": "code"
+    },
+    {
+      "code": "#### Determinant\n**Description:** Finds the determinant of a matrix.\n\n**Example Usage:**",
+      "status": "",
+      "output": "<h4>Determinant</h4>\n<p><strong>Description:</strong> Finds the determinant of a matrix.</p>\n<p><strong>Example Usage:</strong></p>\n",
+      "type": "html"
+    },
+    {
+      "code": "console.log(SciCompute.MatrixOps.determinant([[1, 2], [3, 4]]));",
+      "status": "[9]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "-2 <br>",
+      "type": "code"
+    },
+    {
+      "code": "#### Inverse\n**Description:** Computes the inverse of a matrix.\n\n**Example Usage:**",
+      "status": "",
+      "output": "<h4>Inverse</h4>\n<p><strong>Description:</strong> Computes the inverse of a matrix.</p>\n<p><strong>Example Usage:</strong></p>\n",
+      "type": "html"
+    },
+    {
+      "code": "console.log(SciCompute.MatrixOps.inverse([[2, 1], [1, 2]]));",
+      "status": "[10]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "[\n  [\n    0.6666666666666666,\n    -0.3333333333333333\n  ],\n  [\n    -0.3333333333333333,\n    0.6666666666666666\n  ]\n] <br>",
+      "type": "code"
+    },
+    {
+      "code": "### ODE Solvers",
+      "status": "",
+      "output": "<h3>ODE Solvers</h3>\n",
+      "type": "html"
+    },
+    {
+      "code": "#### Euler\n**Description:** Solves first-order ODEs using Euler's method.\n\n**Example Usage:**",
+      "status": "",
+      "output": "<h4>Euler</h4>\n<p><strong>Description:</strong> Solves first-order ODEs using Euler's method.</p>\n<p><strong>Example Usage:</strong></p>\n",
+      "type": "html"
+    },
+    {
+      "code": "console.log(SciCompute.ODESolvers.euler((t, y) => [-2 * y], 0, [1], 0.1, 10));",
+      "status": "[11]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "[\n  [\n    0,\n    1\n  ],\n  [\n    0.1,\n    0.8\n  ],\n  [\n    0.2,\n    0.64\n  ],\n  [\n    0.30000000000000004,\n    0.512\n  ],\n  [\n    0.4,\n    0.4096\n  ],\n  [\n    0.5,\n    0.32768\n  ],\n  [\n    0.6,\n    0.26214400000000004\n  ],\n  [\n    0.7,\n    0.20971520000000005\n  ],\n  [\n    0.7999999999999999,\n    0.16777216000000003\n  ],\n  [\n    0.8999999999999999,\n    0.13421772800000004\n  ],\n  [\n    0.9999999999999999,\n    0.10737418240000003\n  ]\n] <br>",
+      "type": "code"
+    },
+    {
+      "code": "#### RK4\n**Description:** Solves first-order ODEs using the Runge-Kutta 4th order method.\n\n**Example Usage:**",
+      "status": "",
+      "output": "<h4>RK4</h4>\n<p><strong>Description:</strong> Solves first-order ODEs using the Runge-Kutta 4th order method.</p>\n<p><strong>Example Usage:</strong></p>\n",
+      "type": "html"
+    },
+    {
+      "code": "console.log(SciCompute.ODESolvers.rk4((t, y) => [-2 * y], 0, [1], 0.1, 10));",
+      "status": "[12]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "[\n  [\n    0,\n    1\n  ],\n  [\n    0.1,\n    0.8187333333333333\n  ],\n  [\n    0.2,\n    0.670324271111111\n  ],\n  [\n    0.30000000000000004,\n    0.548816824901037\n  ],\n  [\n    0.4,\n    0.44933462844064237\n  ],\n  [\n    0.5,\n    0.36788523812530194\n  ],\n  [\n    0.6,\n    0.30119990729445556\n  ],\n  [\n    0.7,\n    0.24660240409888057\n  ],\n  [\n    0.7999999999999999,\n    0.20190160831589016\n  ],\n  [\n    0.8999999999999999,\n    0.1653035767818298\n  ],\n  [\n    0.9999999999999999,\n    0.13533954843051013\n  ]\n] <br>",
+      "type": "code"
+    },
+    {
+      "code": "#### Euler 2\n**Description:** Solves second-order ODEs using Euler's method.\n\n**Example Usage:**",
+      "status": "",
+      "output": "<h4>Euler 2</h4>\n<p><strong>Description:</strong> Solves second-order ODEs using Euler's method.</p>\n<p><strong>Example Usage:</strong></p>\n",
+      "type": "html"
+    },
+    {
+      "code": "data = SciCompute.ODESolvers.euler2((t, y, v) => -9.8, 0, 0, 0, 10, 0.1);\nconsole.log(data[101]);",
+      "status": "[17]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "[\n  10.09999999999998,\n  -494.8999999999998,\n  -98.98000000000005\n] <br>",
+      "type": "code"
+    },
+    {
+      "code": "#### RK4 2nd\n**Description:** Solves second-order ODEs using the Runge-Kutta 4th order method.\n\n**Example Usage:**",
+      "status": "",
+      "output": "<h4>RK4 2nd</h4>\n<p><strong>Description:</strong> Solves second-order ODEs using the Runge-Kutta 4th order method.</p>\n<p><strong>Example Usage:</strong></p>\n",
+      "type": "html"
+    },
+    {
+      "code": "data = SciCompute.ODESolvers.rk4_2nd((t, y, v) => -9.8, 0, 0, 0, 10, 0.1);\nconsole.log(data[101]);",
+      "status": "[18]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "[\n  10.09999999999998,\n  -499.84899999999976,\n  -98.98000000000005\n] <br>",
+      "type": "code"
+    },
+    {
+      "code": "### Miscellaneous",
+      "status": "",
+      "output": "<h3>Miscellaneous</h3>\n",
+      "type": "html"
+    },
+    {
+      "code": "#### needlemanWunsch\n**Description:** Performs sequence alignment using the Needleman-Wunsch algorithm.\n\nDefault Values:\n- match = 1\n- mismatch = -1\n- gap = -2\n\n**Example Usage:**",
+      "status": "",
+      "output": "<h4>needlemanWunsch</h4>\n<p><strong>Description:</strong> Performs sequence alignment using the Needleman-Wunsch algorithm.</p>\n<p>Default Values:</p>\n<ul>\n<li>match = 1</li>\n<li>mismatch = -1</li>\n<li>gap = -2</li>\n</ul>\n<p><strong>Example Usage:</strong></p>\n",
+      "type": "html"
+    },
+    {
+      "code": "console.log(SciCompute.Bioinformatics.needlemanWunsch(\"AGT\", \"ACGT\"));",
+      "status": "[19]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "1 <br>",
+      "type": "code"
+    },
+    {
+      "code": "#### lorenzAttractor\n**Description:** Simulates the Lorenz attractor system.\n\n**Example Usage:**",
+      "status": "",
+      "output": "<h4>lorenzAttractor</h4>\n<p><strong>Description:</strong> Simulates the Lorenz attractor system.</p>\n<p><strong>Example Usage:</strong></p>\n",
+      "type": "html"
+    },
+    {
+      "code": "let data = SciCompute.ODEApplications.lorenzAttractor(10, 28, 8/3, 1, 1, 1, 0.01, 5000);\nscrib.show(data[5000]);",
+      "status": "[20]<br><span style=\"font-size:8px\">4ms<span></span></span>",
+      "output": "[\n  49.99999999999862,\n  8.813271356150224,\n  12.901260098396264,\n  20.914966945152912\n] <br>",
+      "type": "code"
+    },
+    {
+      "code": "#### simplePendulum\n**Description:** Simulates the motion of a simple pendulum.\n\n**Example Usage:**",
+      "status": "",
+      "output": "<h4>simplePendulum</h4>\n<p><strong>Description:</strong> Simulates the motion of a simple pendulum.</p>\n<p><strong>Example Usage:</strong></p>\n",
+      "type": "html"
+    },
+    {
+      "code": "let data = SciCompute.ODEApplications.simplePendulum(Math.PI / 4, 1, 9.81, 0.01, 1000);\nscrib.show(data[1000]);",
+      "status": "[21]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "[\n  9.999999999999831,\n  0.21356372861482564,\n  2.3023540194005374\n] <br>",
+      "type": "code"
+    },
+    {
+      "code": "#### projectileMotion\n**Description:** Simulates projectile motion under gravity.\n\n**Example Usage:**",
+      "status": "",
+      "output": "<h4>projectileMotion</h4>\n<p><strong>Description:</strong> Simulates projectile motion under gravity.</p>\n<p><strong>Example Usage:</strong></p>\n",
+      "type": "html"
+    },
+    {
+      "code": "let data1 = SciCompute.ODEApplications.projectileMotion(50, 45, 0.1, 9.81, 0.01, 1000);\nscrib.show(data1[1001]);",
+      "status": "[22]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "output": "[\n  10.009999999999831,\n  10.009999999999831\n] <br>",
+      "type": "code"
+    }
+  ],
+  "source": "https://github.com/gopi-suvanam/scribbler",
+  "run_on_load": false
+}
